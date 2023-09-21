@@ -31,7 +31,9 @@ const NavBar = () => {
 
         <ul className="nav-bar-link">
           <li>Timeline</li>
-          <li>Overview</li>
+          <li className="nav-bar-link-contact">
+            <NavLink to="/">Overview</NavLink>
+          </li>
           <li>FAQs</li>
           <li className="nav-bar-link-contact">
             <NavLink to="contact">Contacts</NavLink>

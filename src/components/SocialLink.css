@@ -3,3 +3,9 @@
   align-items: center;
   gap: 10px;
 }
+
+@media all and (max-width: 768px) {
+  .social-link a svg {
+    width: 17px;
+  }
+}

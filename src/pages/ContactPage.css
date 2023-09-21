@@ -93,3 +93,40 @@
   border: none;
   background: var(--primary-color);
 }
+
+@media all and (max-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contact-info-text {
+    display: none;
+  }
+
+  .contact-social p {
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+    background: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-form-con {
+    width: 80%;
+  }
+
+  .contact-form-con p {
+    margin-bottom: 24px;
+  }
+
+  .contact-form-con input,
+  .contact-form-con textarea {
+    /* width: 298px; */
+  }
+}
