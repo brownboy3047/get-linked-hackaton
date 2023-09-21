@@ -1,17 +1,27 @@
+import { useState } from "react";
+
 //assets
 import photo from "../assets/reg-image.png";
 import Button from "../components/Button";
+import Modal from "../components/Modal";
 //style
 import "./RegisterPage.css";
 
 const RegisterPage = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setShowModal(true);
+  };
   return (
     <main className="register-page">
       <div className="register-page-image">
         <img src={photo} alt="reg photo" />
       </div>
 
-      <form className="register-form">
+      <form className="register-form" onSubmit={handleSubmit}>
         <h1>Register</h1>
 
         <p>Be part of this movement!</p>
@@ -85,6 +95,8 @@ const RegisterPage = () => {
 
         <Button className="register-form-btn">Register Now</Button>
       </form>
+
+      {showModal && <Modal />}
     </main>
   );
 };

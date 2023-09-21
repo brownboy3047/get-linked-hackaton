@@ -20,6 +20,7 @@ body {
   background-color: #150e28;
 }
 
-a {
+a,
+button {
   cursor: pointer;
 }
