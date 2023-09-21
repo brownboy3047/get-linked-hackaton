@@ -52,3 +52,34 @@
   border: none;
   padding: 10px;
 }
+
+@media all and (max-width: 768px) {
+  .modal-backdrop .modal {
+    width: 317px;
+    padding: 30px;
+    position: relative;
+  }
+
+  .modal .modal-img .modal-one {
+    width: 170px;
+    margin-left: 30px;
+  }
+
+  .modal .modal-img .modal-two {
+    width: 170px;
+    position: absolute;
+    right: 40px;
+  }
+
+  .modal h2 {
+    font-size: 16px;
+  }
+
+  .modal p {
+    font-size: 12px;
+  }
+
+  .modal-btn {
+    width: 252px;
+  }
+}

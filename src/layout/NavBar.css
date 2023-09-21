@@ -66,3 +66,76 @@
   border-image-slice: 1;
   border-radius: 4px;
 }
+
+.nav-bar-open {
+  display: none;
+}
+
+.nav-bar-close {
+  display: none;
+}
+
+/* MEDAI QUERY */
+@media all and (max-width: 768px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 20px;
+    position: relative;
+  }
+  .nav-bar-links {
+    display: none;
+  }
+
+  #nav-bar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 340px;
+    background: #150e28;
+    padding: 30px 0 0 50px;
+  }
+
+  .nav-bar-link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .nav-bar-link li {
+    color: #fff;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1px;
+  }
+  .nav-bar-open {
+    display: block;
+    position: absolute;
+    top: 34px;
+    right: 30px;
+  }
+  .nav-bar-close {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  .nav-bar-close img {
+    padding: 8px;
+    border: 1px solid transparent;
+    border-image: linear-gradient(#9a39ff, #ff29b9);
+    border-image-slice: 1;
+    background: #150e28;
+    /* border-radius: 50%; */
+  }
+}

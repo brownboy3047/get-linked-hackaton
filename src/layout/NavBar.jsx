@@ -1,11 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 
 import logo from "../assets/getlinked.png";
 import Button from "../components/Button";
+
+//assets
+import menuOpen from "../assets/menu-open.png";
+import menuClose from "../assets/menu-close.png";
 //style
 import "./NavBar.css";
 
 const NavBar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <nav className="nav-bar">
       <div className="nav-bar-logo">
@@ -14,7 +21,14 @@ const NavBar = () => {
         </Link>
       </div>
 
-      <div className="nav-bar-links">
+      <div className="nav-bar-links" id={showMenu ? "nav-bar-links" : ""}>
+        <div
+          className="nav-bar-close"
+          onClick={() => setShowMenu((show) => !show)}
+        >
+          <img src={menuClose} alt="close menu" />
+        </div>
+
         <ul className="nav-bar-link">
           <li>Timeline</li>
           <li>Overview</li>
@@ -27,6 +41,13 @@ const NavBar = () => {
         <NavLink to="register">
           <Button className="nav-bar-btn">Register</Button>
         </NavLink>
+      </div>
+
+      <div
+        className="nav-bar-open"
+        onClick={() => setShowMenu((show) => !show)}
+      >
+        <img src={menuOpen} alt="open menu" />
       </div>
     </nav>
   );

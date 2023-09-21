@@ -1,0 +1,95 @@
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.contact-info h1 {
+  color: #d434fe;
+  font-family: Clash Display;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.contact-info-text p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 20px 0;
+}
+
+.contact-social p {
+  color: #d434fe;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 14px 0;
+}
+
+/* contact form */
+.contact-form {
+  width: 600px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form-con {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.contact-form-con p {
+  color: #d434fe;
+  font-family: Clash Display;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-form-con form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-con input {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form-con input::placeholder,
+.contact-form-con textarea::placeholder {
+  color: #fff;
+}
+
+.contact-form-con textarea {
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  resize: none;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form-btn {
+  width: 172px;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 4px;
+  border: none;
+  background: var(--primary-color);
+}
