@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //layout
 import NavBar from "./layout/NavBar";
+import Footer from "./layout/Footer";
 
 //pages
 import ContactPage from "./pages/ContactPage";
@@ -22,6 +23,8 @@ function App() {
           <Route path="contact" element={<ContactPage />} />
           <Route path="register" element={<RegisterPage />} />
         </Routes>
+
+        <Footer />
       </BrowserRouter>
     </div>
   );

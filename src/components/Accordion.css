@@ -1,0 +1,26 @@
+.accordion {
+  padding: 40px;
+}
+
+.accordion h1 {
+  color: #fff;
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.accordion h1 span {
+  color: #d434fe;
+}
+
+.accordion .accordion-intro {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 16px 0 40px;
+}
+
+.accordion .accordion-intro span {
+  font-weight: 700;
+}

@@ -1,8 +1,9 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
-import logo from "../assets/getlinked.png";
+//component
 import Button from "../components/Button";
+import Logo from "../components/Logo";
 
 //assets
 import menuOpen from "../assets/menu-open.png";
@@ -15,11 +16,7 @@ const NavBar = () => {
 
   return (
     <nav className="nav-bar">
-      <div className="nav-bar-logo">
-        <Link to="/">
-          <img src={logo} alt="logo" />
-        </Link>
-      </div>
+      <Logo className="nav-bar-logo" />
 
       <div className="nav-bar-links" id={showMenu ? "nav-bar-links" : ""}>
         <div

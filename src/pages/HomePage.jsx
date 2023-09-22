@@ -1,10 +1,15 @@
+import Accordion from "../components/Accordion";
+import Hero from "../landing/Hero";
+
+//assets
 import "./HomePage.css";
 
 const HomePage = () => {
   return (
-    <div className="home-page">
-      <h1>This is Home Page</h1>
-    </div>
+    <main className="home-page">
+      <Hero />
+      {/* <Accordion /> */}
+    </main>
   );
 };
 

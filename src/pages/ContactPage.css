@@ -74,6 +74,10 @@
   color: #fff;
 }
 
+.contact-form-con input[type="text"] {
+  color: #fff;
+}
+
 .contact-form-con textarea {
   color: #fff;
   padding: 15px;
@@ -123,10 +127,5 @@
 
   .contact-form-con p {
     margin-bottom: 24px;
-  }
-
-  .contact-form-con input,
-  .contact-form-con textarea {
-    /* width: 298px; */
   }
 }

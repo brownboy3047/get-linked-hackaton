@@ -20,7 +20,18 @@ body {
   background-color: #150e28;
 }
 
+main {
+  min-height: 100vh;
+}
+
 a,
 button {
   cursor: pointer;
 }
+
+/** logo component*/
+/* @media all and (max-width: 768px) {
+  .logo img {
+    width: 60%;
+  }
+} */
