@@ -1,11 +1,38 @@
+import { useState } from "react";
+
 //component
 import Button from "../components/Button";
 
 //style
 import "./ContactPage.css";
 import SocialLink from "../components/SocialLink";
+import { useContact } from "../hooks/useContact";
 
 const ContactPage = () => {
+  const [email, setEmail] = useState("");
+  const [phone_number, setPhone_number] = useState("");
+  const [first_name, setFirst_name] = useState("");
+  const [message, setMessage] = useState("");
+
+  const { contact } = useContact();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const sub = async () => {
+      await contact(email, phone_number, first_name, message);
+    };
+
+    sub();
+
+    setEmail("");
+    setFirst_name("");
+    setPhone_number("");
+    setMessage("");
+
+    alert("Message sent successfully");
+  };
+
   return (
     <main className="contact">
       <div className="contact-info">
@@ -43,14 +70,30 @@ const ContactPage = () => {
 
           <p>Let us know about it!</p>
 
-          <form>
-            <input type="text" placeholder="First Name" autoComplete="off" />
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="First Name"
+              autoComplete="off"
+              value={first_name}
+              onChange={(e) => setFirst_name(e.target.value)}
+            />
+
+            <input
+              type="text"
+              placeholder="Phone Number"
+              autoComplete="off"
+              value={phone_number}
+              onChange={(e) => setPhone_number(e.target.value)}
+            />
 
             <input
               type="text"
               placeholder="Mail"
               autoComplete="off"
               className="contact-form-two"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
 
             <textarea
@@ -59,6 +102,8 @@ const ContactPage = () => {
               cols="10"
               rows="5"
               placeholder="Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
 
             <Button className="contact-form-btn">Submit</Button>

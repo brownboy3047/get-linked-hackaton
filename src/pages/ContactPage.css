@@ -65,6 +65,7 @@
   padding: 15px;
   border-radius: 4px;
   border: 1px solid #fff;
+  outline: none;
   background: rgba(255, 255, 255, 0.03);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -87,6 +88,7 @@
   border: 1px solid #fff;
   background: rgba(255, 255, 255, 0.03);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  outline: none;
 }
 
 .contact-form-btn {

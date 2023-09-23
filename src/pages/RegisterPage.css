@@ -90,6 +90,12 @@
   padding: 12px;
   margin-top: 12px;
   width: 16.4rem;
+  text-align: center;
+}
+
+.register-form-select select option {
+  background-color: rgb(44, 43, 43);
+  color: #fff;
 }
 
 .register-form span {
