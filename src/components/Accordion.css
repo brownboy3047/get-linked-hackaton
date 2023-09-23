@@ -3,10 +3,7 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 40px;
-}
-
-.accordion {
-  /* padding: 40px; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .accordion h1 {
@@ -30,10 +27,6 @@
 
 .accordion .accordion-intro span {
   font-weight: 700;
-}
-
-.accordion-image img {
-  /* width: 600px; */
 }
 
 @media all and (max-width: 768px) {

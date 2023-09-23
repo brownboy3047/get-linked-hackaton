@@ -1,0 +1,93 @@
+.partners {
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  /* height: 400px; */
+  padding: 30px;
+}
+
+.partners-info {
+  text-align: center;
+}
+
+.partners-info h1 {
+  color: #fff;
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.partners-info p {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.5px;
+}
+
+.partners-logo {
+  max-width: 800px;
+  border-radius: 5px;
+  border: 1px solid #d434fe;
+  background: rgba(255, 255, 255, 0.01);
+  padding: 40px;
+  margin: 60px auto;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.partners-logo img {
+  width: 100px;
+}
+
+.partners-logo p {
+  width: 4px;
+  height: 112.476px;
+  background: #d434fe;
+}
+
+.partners-logo-con {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.partners-logo-one,
+.partners-logo-three {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.partners-logo-wrap {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-logo-four,
+.partners-logo-six {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+@media all and (max-width: 768px) {
+  .partners-logo {
+    max-width: 300px;
+  }
+
+  .partners-logo p {
+    width: 68.271px;
+    height: 2px;
+  }
+
+  .partners-logo img {
+    width: 50px;
+  }
+}

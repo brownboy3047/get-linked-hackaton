@@ -1,0 +1,132 @@
+.policy {
+  color: #fff;
+  padding: 50px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.policy-info h1 {
+  color: #fff;
+  font-family: Clash Display;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 17px;
+}
+
+.policy-info h1 span {
+  color: #d434fe;
+}
+
+.policy-info p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.policy-info .policy-info-text {
+  margin: 30px 0 50px;
+  line-height: 188.4%;
+}
+
+.policy-info-card {
+  max-width: 500px;
+  /* height: 600px; */
+  border-radius: 5px;
+  border: 1px solid #d434fe;
+  background: rgba(217, 217, 217, 0.03);
+  padding: 30px;
+}
+
+.policy-info-card p {
+  line-height: 216.4%;
+}
+
+.policy-info-card h3 {
+  margin: 24px 0 10px;
+  color: #d434fe;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.policy-info-card-list {
+  display: flex;
+  align-items: first baseline;
+  gap: 14px;
+  margin: 18px 0;
+  line-height: 216.4%;
+}
+.policy-btn {
+  text-align: center;
+}
+
+.policy-info-card-btn {
+  width: 172px;
+  background-image: var(--primary-color);
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.policy-image {
+  align-self: flex-start;
+  position: relative;
+}
+
+.policy-image-one {
+  position: absolute;
+  top: 145px;
+  right: -30px;
+}
+
+.policy-image-one img {
+  width: 450px;
+}
+
+@media all and (max-width: 768px) {
+  .policy {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .policy-info h1,
+  .policy-info p {
+    text-align: center;
+  }
+
+  .policy-info-card {
+    max-width: 295px;
+  }
+
+  /* .policy-info-card p {
+    text-align: center;
+  } */
+
+  .policy-info-card-btn {
+    width: 152px;
+  }
+
+  .policy-image {
+    align-self: center;
+  }
+
+  .policy-image svg {
+    width: 249px;
+    height: 400px;
+    margin-bottom: 80px;
+  }
+
+  .policy-image-one {
+    top: 120px;
+    right: 10px;
+  }
+  .policy-image-one img {
+    width: 260px;
+  }
+}
