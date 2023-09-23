@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 //components
 import Button from "../components/Button";
@@ -15,18 +15,28 @@ import manOnGlass from "../assets/man-wearing-smart-glasses.png";
 import "./Hero.css";
 
 const Hero = () => {
-  //   const [time, setTime] = useState();
-  //   const [mins, setMins] = useState();
-  //   const [seconds, setSeconds] = useState();
+  const [hour, setHour] = useState(0);
+  const [mins, setMins] = useState(0);
+  const [seconds, setSeconds] = useState(0);
 
-  const time = new Date();
+  //   const time = new Date();
 
-  //   useEffect(() => {
-  //     const curtime = new Date();
-  //     setInterval(() => {
-  //       setTime(curtime);
-  //     }, 1000);
-  //   });
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setSeconds((sec) => sec + 1);
+
+      if (seconds === 59) {
+        setMins((min) => min + 1);
+        setSeconds(0);
+      }
+
+      if (mins === 59) {
+        setHour(hour + 1);
+      }
+    }, 1000);
+
+    return () => clearInterval(timer);
+  });
 
   return (
     <section className="hero">
@@ -56,17 +66,17 @@ const Hero = () => {
 
           <div className="hero-info-time">
             <span>
-              {time.getHours()}
+              {hour < 10 ? "0" + hour : hour}
               <small>H</small>
             </span>
 
             <span>
-              {time.getMinutes()}
+              {mins < 10 ? "0" + mins : mins}
               <small>M</small>
             </span>
 
             <span>
-              {time.getSeconds()}
+              {seconds < 10 ? "0" + seconds : seconds}
               <small>S</small>
             </span>
           </div>

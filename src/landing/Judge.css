@@ -1,0 +1,68 @@
+.judge {
+  color: #fff;
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.judge-image img {
+  width: 500px;
+}
+
+.judge-info h1 span {
+  color: #d434fe;
+}
+
+.judge-list {
+  width: 450px;
+}
+
+.judge-list li {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.judge-list li span {
+  color: #ff26b9;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.judge-btn {
+  width: 172px;
+  background-image: var(--primary-color);
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+@media all and (max-width: 768px) {
+  .judge {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .judge-image img {
+    width: 300px;
+  }
+
+  .judge-list {
+    width: 100%;
+  }
+
+  .judge-btn {
+    width: 100px;
+  }
+}

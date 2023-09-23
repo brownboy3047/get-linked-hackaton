@@ -1,0 +1,59 @@
+.rules {
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rules-info {
+  width: 450px;
+}
+
+.rules-info .rules-info-heading {
+  color: #fff;
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.rules-info-heading span {
+  color: #d434fe;
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.rules-info p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.rules-image img {
+  width: 500px;
+}
+
+@media all and (max-width: 768px) {
+  .rules {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rules-info {
+    width: 100%;
+  }
+
+  .rules-image img {
+    width: 290px;
+  }
+}

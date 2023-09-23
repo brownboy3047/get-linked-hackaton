@@ -59,6 +59,10 @@
   margin-right: 20px;
 }
 
+.hero-info-time small {
+  font-size: 12px;
+}
+
 .hero-image {
   display: flex;
   position: relative;

@@ -27,6 +27,13 @@
   cursor: pointer;
 }
 
+.nav-bar-link li:hover {
+  background: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .nav-bar-link .nav-bar-link-contact a {
   color: #fff;
   font-family: Montserrat;
