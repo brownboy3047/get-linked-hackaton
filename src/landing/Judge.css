@@ -38,6 +38,7 @@
 }
 
 .judge-btn {
+  color: #fff;
   width: 172px;
   background-image: var(--primary-color);
   padding: 12px;
