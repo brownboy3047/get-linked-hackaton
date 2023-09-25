@@ -149,7 +149,9 @@ const RegisterPage = () => {
             </label>
           </div>
 
-          <Button className="register-form-btn">Register Now</Button>
+          <div className="register-btn">
+            <Button className="register-form-btn">Register Now</Button>
+          </div>
         </div>
       </form>
 

@@ -32,6 +32,8 @@ const Hero = () => {
 
       if (mins === 59) {
         setHour(hour + 1);
+        setMins(0);
+        setSeconds(0);
       }
     }, 1000);
 

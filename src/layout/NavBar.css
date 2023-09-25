@@ -94,7 +94,12 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 30px 20px;
-    position: relative;
+    /* position: relative; */
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #150e28;
   }
 
   .nav-bar-logo img {
