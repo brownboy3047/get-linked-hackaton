@@ -1,0 +1,287 @@
+.prize {
+  color: #fff;
+  padding: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.prize-medal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 30px;
+  margin-right: 250px;
+}
+
+.prize-medal-info h1 {
+  color: #fff;
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.prize-medal-info span {
+  color: #d434fe;
+}
+
+.prize-medal-info p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 170.9%; /* 27.344px */
+}
+
+.prize-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.prize-award img {
+  width: 450px;
+}
+
+.prize-medal-status {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.prize-medal-position {
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #d434fe;
+  background: rgba(212, 52, 254, 0.12);
+  position: relative;
+
+  width: 212px;
+  height: 296px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.prize-medal-position .silver-image {
+  position: absolute;
+  top: -100px;
+}
+
+.prize-medal-silver-info {
+  margin-top: 40px;
+}
+
+.prize-medal-silver-info h1 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  /* line-height: 216.4%; */
+}
+
+.prize-medal-silver-info span {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 216.4%;
+}
+
+.prize-medal-silver-info p {
+  color: #d434fe;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 216.4%;  */
+}
+
+/** gold medal */
+
+.prize-medal-gold {
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #d434fe;
+  background: rgba(212, 52, 254, 0.12);
+  position: relative;
+
+  width: 212px;
+  height: 347px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.prize-medal-gold .gold-image {
+  position: absolute;
+  top: -150px;
+}
+
+.prize-medal-gold-info {
+  margin-top: 100px;
+}
+
+.prize-medal-gold-info h1 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  /* line-height: 216.4%; */
+}
+
+.prize-medal-gold-info span {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 216.4%;
+}
+
+.prize-medal-gold-info p {
+  color: #903aff;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 216.4%;  */
+}
+
+/** bronze medal  */
+.prize-medal-position .bronze-image {
+  position: absolute;
+  top: -100px;
+}
+
+.prize-medal-bronze-info {
+  margin-top: 40px;
+}
+
+.prize-medal-bronze-info h1 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  /* line-height: 216.4%; */
+}
+
+.prize-medal-bronze-info span {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  /* line-height: 216.4%;  */
+}
+
+.prize-medal-bronze-info p {
+  color: #d434fe;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 216.4%;  */
+}
+
+@media all and (max-width: 768px) {
+  .prize-medal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .prize-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prize-award img {
+    width: 100%;
+    /* width: 320px; */
+  }
+
+  .prize-medal-status {
+    margin: 80px 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .prize-medal-position {
+    /* width: 90px; */
+    width: 120px;
+    height: 125px;
+  }
+
+  .prize-medal-position .silver-image {
+    width: 75px;
+    position: absolute;
+    top: -40px;
+  }
+
+  .prize-medal-silver-info {
+    margin-top: 20px;
+  }
+
+  .prize-medal-silver-info h1,
+  .prize-medal-silver-info span,
+  .prize-medal-bronze-info h1,
+  .prize-medal-bronze-info span {
+    font-size: 12px;
+  }
+
+  .prize-medal-silver-info p,
+  .prize-medal-bronze-info p {
+    font-size: 14px;
+  }
+
+  /** gold medal */
+
+  .prize-medal-gold {
+    /* width: 90px; */
+    width: 120px;
+    height: 150px;
+  }
+
+  .prize-medal-gold .gold-image {
+    width: 125px;
+    position: absolute;
+    top: -75px;
+  }
+
+  .prize-medal-gold-info {
+    margin-top: 50px;
+  }
+
+  .prize-medal-gold-info h1,
+  .prize-medal-gold-info span {
+    font-size: 12px;
+  }
+
+  .prize-medal-gold-info p {
+    font-size: 14px;
+  }
+
+  /** Bronze medal */
+
+  .prize-medal-position .bronze-image {
+    width: 75px;
+    position: absolute;
+    top: -40px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .prize-medal-position {
+    width: 90px;
+  }
+
+  .prize-medal-gold {
+    width: 90px;
+  }
+}

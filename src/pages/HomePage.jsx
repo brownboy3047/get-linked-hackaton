@@ -4,6 +4,7 @@ import Hero from "../landing/Hero";
 import Judge from "../landing/Judge";
 // import Partners from "../landing/Partners";
 import Policy from "../landing/Policy";
+import Prize from "../landing/Prize";
 import Rules from "../landing/Rules";
 
 //assets
@@ -17,6 +18,7 @@ const HomePage = () => {
       <Rules />
       <Judge />
       <Accordion />
+      <Prize />
       {/* <Partners /> */}
       <Policy />
     </main>

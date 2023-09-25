@@ -4,6 +4,11 @@
   justify-content: space-between;
   padding: 30px 80px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #150e28;
 }
 
 .nav-bar-links {
